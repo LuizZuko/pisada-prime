@@ -17,8 +17,3 @@ class CheckRole
         return $next($request);
     }
 }
-    Registre o middleware em bootstrap/app.php:PHP->withMiddleware(function (Middleware $middleware) {
-    $middleware->alias([
-        'role' => \App\Http\Middleware\CheckRole::class,
-    ]);
-});
